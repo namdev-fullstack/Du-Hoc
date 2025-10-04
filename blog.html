@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tin tức du học Hàn Quốc: Kinh nghiệm du học, học bổng mới, tin tức từ các trường đại học và câu chuyện thành công."
+    />
+    <meta name="theme-color" content="#0ea5e9" />
+    <title>Tin tức & Blog - Trung tâm Du học Hàn Quốc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { sans: ["Inter", "ui-sans-serif", "system-ui"] },
+            colors: {
+              primary: {
+                50: "#eef9ff",
+                100: "#d9f2ff",
+                200: "#b6e7ff",
+                300: "#83d9ff",
+                400: "#45c7ff",
+                500: "#0ea5e9",
+                600: "#0284c7",
+                700: "#0369a1",
+                800: "#075985",
+                900: "#0c4a6e",
+              },
+            },
+            boxShadow: { soft: "0 10px 30px -10px rgba(2,132,199,0.25)" },
+            backgroundImage: {
+              "hero-gradient":
+                "linear-gradient(120deg, rgba(2,132,199,0.15), rgba(99,102,241,0.15))",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="font-sans text-slate-800 bg-white text-[17px] md:text-[18px] leading-relaxed"
+  >
+    <!-- ----------- Start MENU  -->
+    <header
+      class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b border-slate-200"
+    >
+      <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <a href="./index.html" class="flex items-center gap-3 group">
+            <span
+              class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-primary-100 text-primary-700 ring-1 ring-primary-200 group-hover:shadow-soft transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="h-5 w-5"
+              >
+                <path
+                  d="M12 2l3 7h7l-5.5 4 2.5 7-7-4.5L5 20l2.5-7L2 9h7l3-7z"
+                />
+              </svg>
+            </span>
+            <div class="flex flex-col leading-tight">
+              <span class="text-sm font-semibold tracking-wide"
+                >Du học Hàn Quốc</span
+              >
+              <span class="text-[11px] text-slate-500 -mt-0.5"
+                >Uy tín - Đồng hành - Thành công</span
+              >
+            </div>
+          </a>
+          <div class="hidden md:flex items-center gap-8">
+            <a
+              href="./index.html#about"
+              class="text-sm font-medium text-slate-600 hover:text-primary-600 transition"
+              >Giới thiệu</a
+            >
+            <a
+              href="./products.html"
+              class="text-sm font-medium text-slate-600 hover:text-primary-600 transition"
+              >Chương trình</a
+            >
+            <a
+              href="./index.html#success"
+              class="text-sm font-medium text-slate-600 hover:text-primary-600 transition"
+              >Thành công</a
+            >
+            <a
+              href="./blog.html"
+              class="text-sm font-medium text-primary-600 transition"
+              >Tin tức</a
+            >
+            <a
+              href="./index.html#contact"
+              class="text-sm font-medium text-slate-600 hover:text-primary-600 transition"
+              >Liên hệ</a
+            >
+            <a
+              href="./index.html#contact"
+              class="inline-flex items-center rounded-lg bg-primary-600 px-4 py-2 text-sm font-semibold text-white hover:bg-primary-700 active:bg-primary-800 shadow-soft transition"
+              >Đăng ký tư vấn</a
+            >
+          </div>
+          <!-- ------------Start Menu mobile  -->
+          <button
+            id="menuBtn"
+            class="md:hidden inline-flex items-center justify-center rounded-lg p-2 text-slate-600 hover:bg-slate-100 transition"
+            aria-label="Open menu"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+        </div>
+        <div id="mobileMenu" class="md:hidden hidden pb-4">
+          <div class="grid gap-2 border-t border-slate-200 pt-3">
+            <a
+              href="./index.html#about"
+              class="px-2 py-2 rounded-md text-sm font-medium text-slate-700 hover:bg-slate-100"
+              >Giới thiệu</a
+            >
+            <a
+              href="./products.html"
+              class="px-2 py-2 rounded-md text-sm font-medium text-slate-700 hover:bg-slate-100"
+              >Chương trình</a
+            >
+            <a
+              href="./index.html#success"
+              class="px-2 py-2 rounded-md text-sm font-medium text-slate-700 hover:bg-slate-100"
+              >Thành công</a
+            >
+            <a
+              href="./blog.html"
+              class="px-2 py-2 rounded-md text-sm font-medium text-primary-600"
+              >Tin tức</a
+            >
+            <a
+              href="./index.html#contact"
+              class="px-2 py-2 rounded-md text-sm font-medium text-slate-700 hover:bg-slate-100"
+              >Liên hệ</a
+            >
+            <a
+              href="./index.html#contact"
+              class="px-2 py-2 rounded-md text-sm font-semibold text-white bg-primary-600 hover:bg-primary-700"
+              >Đăng ký tư vấn</a
+            >
+          </div>
+        </div>
+        <!-- ------------End Menu mobile  -->
+      </nav>
+    </header>
+    <!-- ------------End Header  -->
+
+    <!-- ------------Start HERO SECTION  -->
+    <section class="relative overflow-hidden bg-slate-900 text-center">
+      <!-- Background image -->
+      <img
+        src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80"
+        alt="Du học Hàn Quốc"
+        class="absolute inset-0 w-full h-full object-cover object-center"
+      />
+
+      <!-- Overlay (gradient phủ) -->
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-blue-900/70 via-blue-800/60 to-slate-900/70"
+      ></div>
+
+      <!-- Content -->
+      <div
+        class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20 md:py-28"
+      >
+        <div class="max-w-3xl mx-auto text-center text-white">
+          <h1
+            class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight mb-6"
+          >
+            Tin tức & Blog
+          </h1>
+          <p class="text-lg sm:text-xl text-slate-200 leading-relaxed mb-10">
+            Cập nhật tin tức mới nhất về du học Hàn Quốc, chia sẻ kinh nghiệm,
+            học bổng và thông tin từ các trường đại học.
+          </p>
+
+          <!-- Search Form -->
+          <div class="max-w-2xl mx-auto mb-10">
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="Tìm kiếm bài viết..."
+                class="w-full rounded-2xl border-0 bg-white/90 px-6 py-4 pr-12 text-slate-900 placeholder-slate-500 focus:ring-4 focus:ring-blue-200 shadow-md"
+              />
+              <button
+                class="absolute right-2 top-2 bottom-2 inline-flex items-center justify-center rounded-xl bg-blue-600 px-4 text-white hover:bg-blue-700 transition"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Categories -->
+          <div class="flex flex-wrap justify-center gap-3">
+            <span
+              class="inline-flex items-center rounded-full bg-blue-600 px-5 py-2 text-sm font-semibold text-white shadow hover:bg-blue-700 transition"
+            >
+              Tất cả
+            </span>
+            <span
+              class="inline-flex items-center rounded-full bg-white/90 px-5 py-2 text-sm font-semibold text-slate-700 hover:bg-blue-50 hover:text-blue-700 transition cursor-pointer"
+            >
+              Kinh nghiệm du học
+            </span>
+            <span
+              class="inline-flex items-center rounded-full bg-white/90 px-5 py-2 text-sm font-semibold text-slate-700 hover:bg-blue-50 hover:text-blue-700 transition cursor-pointer"
+            >
+              Học bổng mới
+            </span>
+            <span
+              class="inline-flex items-center rounded-full bg-white/90 px-5 py-2 text-sm font-semibold text-slate-700 hover:bg-blue-50 hover:text-blue-700 transition cursor-pointer"
+            >
+              Tin tức trường
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------End HERO SECTION  -->
+
+    <!-- ------------Start BREADCRUMB  -->
+    <section class="bg-slate-50 border-b border-slate-200">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4">
+        <nav class="flex items-center gap-2 text-sm">
+          <a
+            href="./index.html"
+            class="text-slate-600 hover:text-primary-600 transition"
+            >Trang chủ</a
+          >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-4 h-4 text-slate-400"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m8.25 4.5 7.5 7.5-7.5 7.5"
+            />
+          </svg>
+          <span class="text-slate-900 font-medium">Tin tức & Blog</span>
+        </nav>
+      </div>
+    </section>
+    <!-- ------------End BREADCRUMB  -->
+
+    <!-- ------------Start MAIN CONTENT  -->
+    <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
+      <div class="grid lg:grid-cols-4 gap-8">
+        <!-- Main Content Area -->
+        <div class="lg:col-span-3">
+          <!-- Blog Posts Grid -->
+          <div class="grid md:grid-cols-2 gap-6 mb-8">
+            <!-- Blog Post 1 -->
+            <article
+              class="group bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-soft transition-all duration-300"
+            >
+              <div class="relative overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1460518451285-97b6aa326961?q=80&w=400&auto=format&fit=crop"
+                  alt="Checklist hồ sơ du học Hàn Quốc 2025"
+                  class="h-48 w-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div class="absolute top-4 left-4">
+                  <span
+                    class="inline-flex items-center rounded-full bg-primary-100 px-3 py-1 text-xs font-semibold text-primary-700"
+                  >
+                    Kinh nghiệm du học
+                  </span>
+                </div>
+              </div>
+              <div class="p-6">
+                <div
+                  class="flex items-center gap-2 text-sm text-slate-500 mb-3"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-4 h-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5a2.25 2.25 0 002.25-2.25m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5a2.25 2.25 0 012.25 2.25v7.5"
+                    />
+                  </svg>
+                  <span>15 tháng 1, 2025</span>
+                </div>
+                <h3
+                  class="text-lg font-bold text-slate-900 mb-3 group-hover:text-primary-600 transition line-clamp-2"
+                >
+                  Checklist hồ sơ du học Hàn Quốc 2025
+                </h3>
+                <p class="text-sm text-slate-600 mb-4 line-clamp-3">
+                  Hướng dẫn chi tiết chuẩn bị hồ sơ du học Hàn Quốc đầy đủ nhất.
+                  Giấy tờ cần chuẩn bị, thời gian nộp, mẹo tăng tỉ lệ visa thành
+                  công.
+                </p>
+                <a
+                  href="./detail.html"
+                  class="inline-flex items-center gap-2 text-sm font-semibold text-primary-600 hover:text-primary-700 transition"
+                >
+                  Đọc tiếp
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-4 h-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Blog Post 2 -->
+            <article
+              class="group bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-soft transition-all duration-300"
+            >
+              <div class="relative overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=400&auto=format&fit=crop"
+                  alt="Học bổng kỳ Thu 2025"
+                  class="h-48 w-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div class="absolute top-4 left-4">
+                  <span
+                    class="inline-flex items-center rounded-full bg-green-100 px-3 py-1 text-xs font-semibold text-green-700"
+                  >
+                    Học bổng mới
+                  </span>
+                </div>
+              </div>
+              <div class="p-6">
+                <div
+                  class="flex items-center gap-2 text-sm text-slate-500 mb-3"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-4 h-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5a2.25 2.25 0 002.25-2.25m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5a2.25 2.25 0 012.25 2.25v7.5"
+                    />
+                  </svg>
+                  <span>12 tháng 1, 2025</span>
+                </div>
+                <h3
+                  class="text-lg font-bold text-slate-900 mb-3 group-hover:text-primary-600 transition line-clamp-2"
+                >
+                  Học bổng kỳ Thu 2025 - Các trường top Seoul
+                </h3>
+                <p class="text-sm text-slate-600 mb-4 line-clamp-3">
+                  Cập nhật thông tin học bổng mới nhất từ các trường đại học
+                  hàng đầu Seoul. Điều kiện xét và mốc thời gian nộp hồ sơ.
+                </p>
+                <a
+                  href="./detail.html"
+                  class="inline-flex items-center gap-2 text-sm font-semibold text-primary-600 hover:text-primary-700 transition"
+                >
+                  Đọc tiếp
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-4 h-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Blog Post 3 -->
+            <article
+              class="group bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-soft transition-all duration-300"
+            >
+              <div class="relative overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=400&auto=format&fit=crop"
+                  alt="Cập nhật tuyển sinh Đại học Hàn Quốc"
+                  class="h-48 w-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div class="absolute top-4 left-4">
+                  <span
+                    class="inline-flex items-center rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700"
+                  >
+                    Tin tức trường
+                  </span>
+                </div>
+              </div>
+              <div class="p-6">
+                <div
+                  class="flex items-center gap-2 text-sm text-slate-500 mb-3"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-4 h-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5a2.25 2.25 0 002.25-2.25m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5a2.25 2.25 0 012.25 2.25v7.5"
+                    />
+                  </svg>
+                  <span>10 tháng 1, 2025</span>
+                </div>
+                <h3
+                  class="text-lg font-bold text-slate-900 mb-3 group-hover:text-primary-600 transition line-clamp-2"
+                >
+                  Cập nhật tuyển sinh Đại học Hàn Quốc
+                </h3>
+                <p class="text-sm text-slate-600 mb-4 line-clamp-3">
+                  Thông báo mới từ các trường đối tác tại Seoul, Busan. Thay đổi
+                  về yêu cầu đầu vào và chương trình học bổng.
+                </p>
+                <a
+                  href="./detail.html"
+                  class="inline-flex items-center gap-2 text-sm font-semibold text-primary-600 hover:text-primary-700 transition"
+                >
+                  Đọc tiếp
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-4 h-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Blog Post 4 -->
+            <article
+              class="group bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-soft transition-all duration-300"
+            >
+              <div class="relative overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=400&auto=format&fit=crop"
+                  alt="Kinh nghiệm sống và học tập tại Seoul"
+                  class="h-48 w-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div class="absolute top-4 left-4">
+                  <span
+                    class="inline-flex items-center rounded-full bg-primary-100 px-3 py-1 text-xs font-semibold text-primary-700"
+                  >
+                    Kinh nghiệm du học
+                  </span>
+                </div>
+              </div>
+              <div class="p-6">
+                <div
+                  class="flex items-center gap-2 text-sm text-slate-500 mb-3"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-4 h-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5a2.25 2.25 0 002.25-2.25m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5a2.25 2.25 0 012.25 2.25v7.5"
+                    />
+                  </svg>
+                  <span>8 tháng 1, 2025</span>
+                </div>
+                <h3
+                  class="text-lg font-bold text-slate-900 mb-3 group-hover:text-primary-600 transition line-clamp-2"
+                >
+                  Kinh nghiệm sống và học tập tại Seoul
+                </h3>
+                <p class="text-sm text-slate-600 mb-4 line-clamp-3">
+                  Chia sẻ từ cựu du học sinh về cuộc sống, học tập và những trải
+                  nghiệm đáng nhớ tại thủ đô Seoul.
+                </p>
+                <a
+                  href="./detail.html"
+                  class="inline-flex items-center gap-2 text-sm font-semibold text-primary-600 hover:text-primary-700 transition"
+                >
+                  Đọc tiếp
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-4 h-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Blog Post 5 -->
+            <article
+              class="group bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-soft transition-all duration-300"
+            >
+              <div class="relative overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1558021212-51b6ecfa0db9?q=80&w=400&auto=format&fit=crop"
+                  alt="Câu chuyện thành công - Học bổng 100% tại KAIST"
+                  class="h-48 w-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div class="absolute top-4 left-4">
+                  <span
+                    class="inline-flex items-center rounded-full bg-green-100 px-3 py-1 text-xs font-semibold text-green-700"
+                  >
+                    Học bổng mới
+                  </span>
+                </div>
+              </div>
+              <div class="p-6">
+                <div
+                  class="flex items-center gap-2 text-sm text-slate-500 mb-3"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-4 h-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5a2.25 2.25 0 002.25-2.25m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5a2.25 2.25 0 012.25 2.25v7.5"
+                    />
+                  </svg>
+                  <span>5 tháng 1, 2025</span>
+                </div>
+                <h3
+                  class="text-lg font-bold text-slate-900 mb-3 group-hover:text-primary-600 transition line-clamp-2"
+                >
+                  Câu chuyện thành công - Học bổng 100% tại KAIST
+                </h3>
+                <p class="text-sm text-slate-600 mb-4 line-clamp-3">
+                  Chia sẻ kinh nghiệm đạt học bổng toàn phần tại Viện Khoa học
+                  và Công nghệ Hàn Quốc từ học sinh Việt Nam.
+                </p>
+                <a
+                  href="./detail.html"
+                  class="inline-flex items-center gap-2 text-sm font-semibold text-primary-600 hover:text-primary-700 transition"
+                >
+                  Đọc tiếp
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-4 h-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Blog Post 6 -->
+            <article
+              class="group bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-soft transition-all duration-300"
+            >
+              <div class="relative overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1488998527040-85054a85150e?q=80&w=400&auto=format&fit=crop"
+                  alt="Hướng dẫn phỏng vấn visa du học Hàn Quốc"
+                  class="h-48 w-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div class="absolute top-4 left-4">
+                  <span
+                    class="inline-flex items-center rounded-full bg-primary-100 px-3 py-1 text-xs font-semibold text-primary-700"
+                  >
+                    Kinh nghiệm du học
+                  </span>
+                </div>
+              </div>
+              <div class="p-6">
+                <div
+                  class="flex items-center gap-2 text-sm text-slate-500 mb-3"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-4 h-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5a2.25 2.25 0 002.25-2.25m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5a2.25 2.25 0 012.25 2.25v7.5"
+                    />
+                  </svg>
+                  <span>3 tháng 1, 2025</span>
+                </div>
+                <h3
+                  class="text-lg font-bold text-slate-900 mb-3 group-hover:text-primary-600 transition line-clamp-2"
+                >
+                  Hướng dẫn phỏng vấn visa du học Hàn Quốc
+                </h3>
+                <p class="text-sm text-slate-600 mb-4 line-clamp-3">
+                  Mẹo và kinh nghiệm phỏng vấn visa du học Hàn Quốc thành công.
+                  Chuẩn bị câu trả lời và tâm lý vững vàng.
+                </p>
+                <a
+                  href="./detail.html"
+                  class="inline-flex items-center gap-2 text-sm font-semibold text-primary-600 hover:text-primary-700 transition"
+                >
+                  Đọc tiếp
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-4 h-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Pagination -->
+          <div class="flex justify-center items-center gap-2 mb-8">
+            <button
+              class="px-3 py-2 rounded-lg border border-slate-300 text-sm font-medium text-slate-700 hover:bg-slate-50 transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </button>
+            <button
+              class="px-3 py-2 rounded-lg bg-primary-600 text-sm font-semibold text-white"
+            >
+              1
+            </button>
+            <button
+              class="px-3 py-2 rounded-lg border border-slate-300 text-sm font-medium text-slate-700 hover:bg-slate-50 transition"
+            >
+              2
+            </button>
+            <button
+              class="px-3 py-2 rounded-lg border border-slate-300 text-sm font-medium text-slate-700 hover:bg-slate-50 transition"
+            >
+              3
+            </button>
+            <span class="px-2 text-sm text-slate-500">...</span>
+            <button
+              class="px-3 py-2 rounded-lg border border-slate-300 text-sm font-medium text-slate-700 hover:bg-slate-50 transition"
+            >
+              10
+            </button>
+            <button
+              class="px-3 py-2 rounded-lg border border-slate-300 text-sm font-medium text-slate-700 hover:bg-slate-50 transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="lg:col-span-1">
+          <div class="sticky top-24 space-y-6">
+            <!-- Categories -->
+            <div
+              class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm"
+            >
+              <h3 class="text-lg font-semibold text-slate-900 mb-4">
+                Danh mục
+              </h3>
+              <div class="space-y-3">
+                <a
+                  href="#"
+                  class="flex items-center justify-between text-sm text-slate-700 hover:text-primary-600 transition"
+                >
+                  <span>Kinh nghiệm du học</span>
+                  <span class="text-xs text-slate-500">(12)</span>
+                </a>
+                <a
+                  href="#"
+                  class="flex items-center justify-between text-sm text-slate-700 hover:text-primary-600 transition"
+                >
+                  <span>Học bổng mới</span>
+                  <span class="text-xs text-slate-500">(8)</span>
+                </a>
+                <a
+                  href="#"
+                  class="flex items-center justify-between text-sm text-slate-700 hover:text-primary-600 transition"
+                >
+                  <span>Tin tức trường</span>
+                  <span class="text-xs text-slate-500">(15)</span>
+                </a>
+                <a
+                  href="#"
+                  class="flex items-center justify-between text-sm text-slate-700 hover:text-primary-600 transition"
+                >
+                  <span>Thành công</span>
+                  <span class="text-xs text-slate-500">(6)</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Popular Posts -->
+            <div
+              class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm"
+            >
+              <h3 class="text-lg font-semibold text-slate-900 mb-4">
+                Bài viết phổ biến
+              </h3>
+              <div class="space-y-4">
+                <article class="flex gap-3">
+                  <img
+                    src="https://images.unsplash.com/photo-1460518451285-97b6aa326961?q=80&w=80&auto=format&fit=crop"
+                    alt="Blog post"
+                    class="w-16 h-16 rounded-lg object-cover flex-shrink-0"
+                  />
+                  <div>
+                    <h4
+                      class="text-sm font-semibold text-slate-900 line-clamp-2 mb-1"
+                    >
+                      Checklist hồ sơ du học Hàn Quốc 2025
+                    </h4>
+                    <p class="text-xs text-slate-500">15 tháng 1, 2025</p>
+                  </div>
+                </article>
+                <article class="flex gap-3">
+                  <img
+                    src="https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=80&auto=format&fit=crop"
+                    alt="Blog post"
+                    class="w-16 h-16 rounded-lg object-cover flex-shrink-0"
+                  />
+                  <div>
+                    <h4
+                      class="text-sm font-semibold text-slate-900 line-clamp-2 mb-1"
+                    >
+                      Học bổng kỳ Thu 2025 - Các trường top Seoul
+                    </h4>
+                    <p class="text-xs text-slate-500">12 tháng 1, 2025</p>
+                  </div>
+                </article>
+                <article class="flex gap-3">
+                  <img
+                    src="https://images.unsplash.com/photo-1558021212-51b6ecfa0db9?q=80&w=80&auto=format&fit=crop"
+                    alt="Blog post"
+                    class="w-16 h-16 rounded-lg object-cover flex-shrink-0"
+                  />
+                  <div>
+                    <h4
+                      class="text-sm font-semibold text-slate-900 line-clamp-2 mb-1"
+                    >
+                      Câu chuyện thành công - Học bổng 100% tại KAIST
+                    </h4>
+                    <p class="text-xs text-slate-500">5 tháng 1, 2025</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <!-- Newsletter -->
+            <div
+              class="bg-gradient-to-br from-primary-50 to-blue-50 rounded-2xl border border-primary-200 p-6"
+            >
+              <h3 class="text-lg font-semibold text-slate-900 mb-3">
+                Đăng ký nhận tin
+              </h3>
+              <p class="text-sm text-slate-700 mb-4">
+                Nhận thông tin mới nhất về du học Hàn Quốc qua email.
+              </p>
+              <form class="space-y-3">
+                <input
+                  type="email"
+                  placeholder="Email của bạn"
+                  class="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                />
+                <button
+                  type="submit"
+                  class="w-full inline-flex items-center justify-center rounded-lg bg-primary-600 px-4 py-2 text-sm font-semibold text-white hover:bg-primary-700 transition"
+                >
+                  Đăng ký
+                </button>
+              </form>
+            </div>
+
+            <!-- CTA Card -->
+            <div
+              class="bg-gradient-to-br from-primary-600 to-blue-700 rounded-2xl p-6 text-white"
+            >
+              <h3 class="text-lg font-semibold mb-3">Cần tư vấn?</h3>
+              <p class="text-sm text-blue-100 mb-4">
+                Đội ngũ chuyên gia sẵn sàng hỗ trợ bạn 24/7.
+              </p>
+              <a
+                href="./index.html#contact"
+                class="inline-flex items-center justify-center w-full rounded-lg bg-white px-4 py-3 text-sm font-semibold text-primary-600 hover:bg-slate-50 transition"
+              >
+                Đăng ký tư vấn miễn phí
+              </a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <!-- ------------End MAIN CONTENT  -->
+
+    <!-- ------------Start FOOTER  -->
+    <footer class="border-t border-slate-200 py-8 mt-16">
+      <div
+        class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-600"
+      >
+        <div>© 2025 Du học Hàn Quốc. All rights reserved.</div>
+        <div class="flex items-center gap-4">
+          <a href="./index.html#about" class="hover:text-primary-700"
+            >Giới thiệu</a
+          >
+          <a href="./products.html" class="hover:text-primary-700"
+            >Chương trình</a
+          >
+          <a href="./index.html#contact" class="hover:text-primary-700"
+            >Liên hệ</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+        });
+      }
+    </script>
+  </body>
+</html>

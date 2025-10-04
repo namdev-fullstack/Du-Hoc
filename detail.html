@@ -1,11 +1,839 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Detail</h1>
-</body>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Checklist hồ sơ du học Hàn Quốc 2025: Giấy tờ cần chuẩn bị, thời gian nộp, mẹo tăng tỉ lệ visa thành công."
+    />
+    <meta name="theme-color" content="#0ea5e9" />
+    <title>
+      Checklist hồ sơ du học Hàn Quốc 2025 - Trung tâm Du học Hàn Quốc
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { sans: ["Inter", "ui-sans-serif", "system-ui"] },
+            colors: {
+              primary: {
+                50: "#eef9ff",
+                100: "#d9f2ff",
+                200: "#b6e7ff",
+                300: "#83d9ff",
+                400: "#45c7ff",
+                500: "#0ea5e9",
+                600: "#0284c7",
+                700: "#0369a1",
+                800: "#075985",
+                900: "#0c4a6e",
+              },
+            },
+            boxShadow: { soft: "0 10px 30px -10px rgba(2,132,199,0.25)" },
+            backgroundImage: {
+              "hero-gradient":
+                "linear-gradient(120deg, rgba(2,132,199,0.15), rgba(99,102,241,0.15))",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="font-sans text-slate-800 bg-white text-[17px] md:text-[18px] leading-relaxed"
+  >
+    <!-- ----------- Start MENU  -->
+    <header
+      class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b border-slate-200"
+    >
+      <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <a href="./index.html" class="flex items-center gap-3 group">
+            <span
+              class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-primary-100 text-primary-700 ring-1 ring-primary-200 group-hover:shadow-soft transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="h-5 w-5"
+              >
+                <path
+                  d="M12 2l3 7h7l-5.5 4 2.5 7-7-4.5L5 20l2.5-7L2 9h7l3-7z"
+                />
+              </svg>
+            </span>
+            <div class="flex flex-col leading-tight">
+              <span class="text-sm font-semibold tracking-wide"
+                >Du học Hàn Quốc</span
+              >
+              <span class="text-[11px] text-slate-500 -mt-0.5"
+                >Uy tín - Đồng hành - Thành công</span
+              >
+            </div>
+          </a>
+          <div class="hidden md:flex items-center gap-8">
+            <a
+              href="./index.html#about"
+              class="text-sm font-medium text-slate-600 hover:text-primary-600 transition"
+              >Giới thiệu</a
+            >
+            <a
+              href="./index.html#programs"
+              class="text-sm font-medium text-slate-600 hover:text-primary-600 transition"
+              >Chương trình</a
+            >
+            <a
+              href="./index.html#success"
+              class="text-sm font-medium text-slate-600 hover:text-primary-600 transition"
+              >Thành công</a
+            >
+            <a
+              href="./index.html#blog"
+              class="text-sm font-medium text-primary-600 transition"
+              >Tin tức</a
+            >
+            <a
+              href="./index.html#contact"
+              class="text-sm font-medium text-slate-600 hover:text-primary-600 transition"
+              >Liên hệ</a
+            >
+            <a
+              href="./index.html#contact"
+              class="inline-flex items-center rounded-lg bg-primary-600 px-4 py-2 text-sm font-semibold text-white hover:bg-primary-700 active:bg-primary-800 shadow-soft transition"
+              >Đăng ký tư vấn</a
+            >
+          </div>
+          <!-- ------------Start Menu mobile  -->
+          <button
+            id="menuBtn"
+            class="md:hidden inline-flex items-center justify-center rounded-lg p-2 text-slate-600 hover:bg-slate-100 transition"
+            aria-label="Open menu"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+        </div>
+        <div id="mobileMenu" class="md:hidden hidden pb-4">
+          <div class="grid gap-2 border-t border-slate-200 pt-3">
+            <a
+              href="./index.html#about"
+              class="px-2 py-2 rounded-md text-sm font-medium text-slate-700 hover:bg-slate-100"
+              >Giới thiệu</a
+            >
+            <a
+              href="./index.html#programs"
+              class="px-2 py-2 rounded-md text-sm font-medium text-slate-700 hover:bg-slate-100"
+              >Chương trình</a
+            >
+            <a
+              href="./index.html#success"
+              class="px-2 py-2 rounded-md text-sm font-medium text-slate-700 hover:bg-slate-100"
+              >Thành công</a
+            >
+            <a
+              href="./index.html#blog"
+              class="px-2 py-2 rounded-md text-sm font-medium text-primary-600"
+              >Tin tức</a
+            >
+            <a
+              href="./index.html#contact"
+              class="px-2 py-2 rounded-md text-sm font-medium text-slate-700 hover:bg-slate-100"
+              >Liên hệ</a
+            >
+            <a
+              href="./index.html#contact"
+              class="px-2 py-2 rounded-md text-sm font-semibold text-white bg-primary-600 hover:bg-primary-700"
+              >Đăng ký tư vấn</a
+            >
+          </div>
+        </div>
+        <!-- ------------End Menu mobile  -->
+      </nav>
+    </header>
+    <!-- ------------End Header  -->
+
+    <!-- ------------Start BREADCRUMB  -->
+    <section class="bg-slate-50 border-b border-slate-200">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4">
+        <nav class="flex items-center gap-2 text-sm">
+          <a
+            href="./index.html"
+            class="text-slate-600 hover:text-primary-600 transition"
+            >Trang chủ</a
+          >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-4 h-4 text-slate-400"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m8.25 4.5 7.5 7.5-7.5 7.5"
+            />
+          </svg>
+          <a
+            href="./index.html#blog"
+            class="text-slate-600 hover:text-primary-600 transition"
+            >Tin tức</a
+          >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-4 h-4 text-slate-400"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m8.25 4.5 7.5 7.5-7.5 7.5"
+            />
+          </svg>
+          <span class="text-slate-900 font-medium"
+            >Checklist hồ sơ du học Hàn Quốc 2025</span
+          >
+        </nav>
+      </div>
+    </section>
+    <!-- ------------End BREADCRUMB  -->
+
+    <!-- ------------Start MAIN CONTENT  -->
+    <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
+      <div class="grid lg:grid-cols-3 gap-8">
+        <!-- Main Article Content -->
+        <article class="lg:col-span-2">
+          <!-- Article Header -->
+          <header class="mb-8">
+            <div class="mb-4">
+              <span
+                class="inline-flex items-center gap-2 rounded-full border border-primary-200 bg-primary-50 px-3 py-1 text-xs font-semibold text-primary-700"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="h-4 w-4"
+                >
+                  <path
+                    d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14l-4-4 1.4-1.4L13 12.2l4.6-4.6L19 9l-6 7z"
+                  />
+                </svg>
+                Kinh nghiệm du học
+              </span>
+            </div>
+            <h1
+              class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight mb-4"
+            >
+              Checklist hồ sơ du học Hàn Quốc 2025
+            </h1>
+            <p class="text-lg text-slate-600 leading-relaxed mb-6">
+              Giấy tờ cần chuẩn bị, thời gian nộp, mẹo tăng tỉ lệ visa thành
+              công cho du học sinh Việt Nam.
+            </p>
+
+            <!-- Article Meta -->
+            <div
+              class="flex flex-wrap items-center gap-4 text-sm text-slate-500 border-b border-slate-200 pb-6"
+            >
+              <div class="flex items-center gap-2">
+                <img
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=32&auto=format&fit=crop"
+                  alt="Tác giả"
+                  class="w-8 h-8 rounded-full"
+                />
+                <span>Nguyễn Minh Tuấn</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5a2.25 2.25 0 002.25-2.25m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5a2.25 2.25 0 012.25 2.25v7.5"
+                  />
+                </svg>
+                <span>15 tháng 1, 2025</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span>8 phút đọc</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+                <span>2,847 lượt xem</span>
+              </div>
+            </div>
+          </header>
+
+          <!-- Featured Image -->
+          <div class="mb-8">
+            <img
+              src="https://images.unsplash.com/photo-1460518451285-97b6aa326961?q=80&w=1400&auto=format&fit=crop"
+              alt="Checklist hồ sơ du học Hàn Quốc"
+              class="w-full h-64 sm:h-80 md:h-96 object-cover rounded-2xl shadow-lg"
+            />
+          </div>
+
+          <!-- Article Content -->
+          <div class="prose prose-lg max-w-none">
+            <p class="text-lg text-slate-700 leading-relaxed mb-6">
+              Du học Hàn Quốc đang trở thành xu hướng của nhiều bạn trẻ Việt
+              Nam. Tuy nhiên, việc chuẩn bị hồ sơ du học là một quá trình phức
+              tạp và cần sự cẩn thận. Bài viết này sẽ cung cấp cho bạn checklist
+              đầy đủ để chuẩn bị hồ sơ du học Hàn Quốc năm 2025.
+            </p>
+
+            <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">
+              1. Giấy tờ cá nhân cơ bản
+            </h2>
+
+            <div class="bg-slate-50 rounded-2xl p-6 mb-6">
+              <h3 class="text-lg font-semibold text-slate-900 mb-4">
+                Giấy tờ bắt buộc:
+              </h3>
+              <ul class="space-y-3 text-slate-700">
+                <li class="flex items-start gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="h-5 w-5 text-primary-600 mt-0.5 flex-shrink-0"
+                  >
+                    <path
+                      d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14l-4-4 1.4-1.4L13 12.2l4.6-4.6L19 9l-6 7z"
+                    />
+                  </svg>
+                  <span>CMND/CCCD (bản gốc và bản sao công chứng)</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="h-5 w-5 text-primary-600 mt-0.5 flex-shrink-0"
+                  >
+                    <path
+                      d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14l-4-4 1.4-1.4L13 12.2l4.6-4.6L19 9l-6 7z"
+                    />
+                  </svg>
+                  <span>Hộ chiếu (còn hạn ít nhất 6 tháng)</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="h-5 w-5 text-primary-600 mt-0.5 flex-shrink-0"
+                  >
+                    <path
+                      d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14l-4-4 1.4-1.4L13 12.2l4.6-4.6L19 9l-6 7z"
+                    />
+                  </svg>
+                  <span>Giấy khai sinh (bản sao công chứng)</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="h-5 w-5 text-primary-600 mt-0.5 flex-shrink-0"
+                  >
+                    <path
+                      d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14l-4-4 1.4-1.4L13 12.2l4.6-4.6L19 9l-6 7z"
+                    />
+                  </svg>
+                  <span
+                    >Ảnh thẻ 3.5x4.5cm (nền trắng, chụp trong 6 tháng gần
+                    nhất)</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">
+              2. Giấy tờ học vấn
+            </h2>
+
+            <div class="bg-blue-50 rounded-2xl p-6 mb-6">
+              <h3 class="text-lg font-semibold text-slate-900 mb-4">
+                Bằng cấp và bảng điểm:
+              </h3>
+              <ul class="space-y-3 text-slate-700">
+                <li class="flex items-start gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="h-5 w-5 text-primary-600 mt-0.5 flex-shrink-0"
+                  >
+                    <path
+                      d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14l-4-4 1.4-1.4L13 12.2l4.6-4.6L19 9l-6 7z"
+                    />
+                  </svg>
+                  <span
+                    >Bằng tốt nghiệp THPT (bản gốc và bản dịch tiếng Hàn)</span
+                  >
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="h-5 w-5 text-primary-600 mt-0.5 flex-shrink-0"
+                  >
+                    <path
+                      d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14l-4-4 1.4-1.4L13 12.2l4.6-4.6L19 9l-6 7z"
+                    />
+                  </svg>
+                  <span>Học bạ THPT (bản gốc và bản dịch tiếng Hàn)</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="h-5 w-5 text-primary-600 mt-0.5 flex-shrink-0"
+                  >
+                    <path
+                      d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14l-4-4 1.4-1.4L13 12.2l4.6-4.6L19 9l-6 7z"
+                    />
+                  </svg>
+                  <span>Chứng chỉ tiếng Hàn TOPIK (nếu có)</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="h-5 w-5 text-primary-600 mt-0.5 flex-shrink-0"
+                  >
+                    <path
+                      d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14l-4-4 1.4-1.4L13 12.2l4.6-4.6L19 9l-6 7z"
+                    />
+                  </svg>
+                  <span>Chứng chỉ tiếng Anh IELTS/TOEFL (nếu có)</span>
+                </li>
+              </ul>
+            </div>
+
+            <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">
+              3. Giấy tờ tài chính
+            </h2>
+
+            <div class="bg-green-50 rounded-2xl p-6 mb-6">
+              <h3 class="text-lg font-semibold text-slate-900 mb-4">
+                Chứng minh tài chính:
+              </h3>
+              <ul class="space-y-3 text-slate-700">
+                <li class="flex items-start gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="h-5 w-5 text-primary-600 mt-0.5 flex-shrink-0"
+                  >
+                    <path
+                      d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14l-4-4 1.4-1.4L13 12.2l4.6-4.6L19 9l-6 7z"
+                    />
+                  </svg>
+                  <span>Sổ tiết kiệm ngân hàng (tối thiểu $20,000 USD)</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="h-5 w-5 text-primary-600 mt-0.5 flex-shrink-0"
+                  >
+                    <path
+                      d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14l-4-4 1.4-1.4L13 12.2l4.6-4.6L19 9l-6 7z"
+                    />
+                  </svg>
+                  <span>Giấy xác nhận thu nhập của người bảo lãnh</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="h-5 w-5 text-primary-600 mt-0.5 flex-shrink-0"
+                  >
+                    <path
+                      d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14l-4-4 1.4-1.4L13 12.2l4.6-4.6L19 9l-6 7z"
+                    />
+                  </svg>
+                  <span>Giấy chứng nhận quyền sử dụng đất/nhà (nếu có)</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="h-5 w-5 text-primary-600 mt-0.5 flex-shrink-0"
+                  >
+                    <path
+                      d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14l-4-4 1.4-1.4L13 12.2l4.6-4.6L19 9l-6 7z"
+                    />
+                  </svg>
+                  <span>Lịch sử giao dịch ngân hàng 6 tháng gần nhất</span>
+                </li>
+              </ul>
+            </div>
+
+            <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">
+              4. Mẹo tăng tỉ lệ visa thành công
+            </h2>
+
+            <div class="bg-yellow-50 rounded-2xl p-6 mb-6">
+              <div class="space-y-4">
+                <div class="flex items-start gap-4">
+                  <span
+                    class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary-100 text-primary-700 font-semibold text-sm flex-shrink-0"
+                    >1</span
+                  >
+                  <div>
+                    <h4 class="font-semibold text-slate-900 mb-2">
+                      Chuẩn bị kỹ lưỡng
+                    </h4>
+                    <p class="text-slate-700">
+                      Đảm bảo tất cả giấy tờ đều được dịch thuật chính xác và
+                      công chứng đầy đủ.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <span
+                    class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary-100 text-primary-700 font-semibold text-sm flex-shrink-0"
+                    >2</span
+                  >
+                  <div>
+                    <h4 class="font-semibold text-slate-900 mb-2">
+                      Thời gian nộp hồ sơ
+                    </h4>
+                    <p class="text-slate-700">
+                      Nộp hồ sơ sớm ít nhất 3-4 tháng trước kỳ nhập học để có
+                      thời gian xử lý.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <span
+                    class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary-100 text-primary-700 font-semibold text-sm flex-shrink-0"
+                    >3</span
+                  >
+                  <div>
+                    <h4 class="font-semibold text-slate-900 mb-2">
+                      Luyện phỏng vấn
+                    </h4>
+                    <p class="text-slate-700">
+                      Chuẩn bị kỹ câu trả lời về mục tiêu học tập và kế hoạch
+                      tương lai.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-primary-50 rounded-2xl p-6 mb-8">
+              <h3 class="text-lg font-semibold text-slate-900 mb-3">
+                💡 Lưu ý quan trọng:
+              </h3>
+              <p class="text-slate-700 leading-relaxed">
+                Mỗi trường đại học Hàn Quốc có thể có yêu cầu giấy tờ khác nhau.
+                Hãy liên hệ trực tiếp với trường hoặc trung tâm du học uy tín để
+                được tư vấn chi tiết về hồ sơ phù hợp với chương trình học bạn
+                lựa chọn.
+              </p>
+            </div>
+
+            <!-- Share Buttons -->
+            <div class="border-t border-slate-200 pt-6 mb-8">
+              <h3 class="text-lg font-semibold text-slate-900 mb-4">
+                Chia sẻ bài viết:
+              </h3>
+              <div class="flex flex-wrap gap-3">
+                <a
+                  href="#"
+                  class="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 transition"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="h-4 w-4"
+                  >
+                    <path
+                      d="M13 3h4a1 1 0 011 1v4h-3a2 2 0 00-2 2v3h5l-1 4h-4v6h-4v-6H6v-4h3V9a6 6 0 016-6z"
+                    />
+                  </svg>
+                  Facebook
+                </a>
+                <a
+                  href="#"
+                  class="inline-flex items-center gap-2 rounded-lg bg-blue-400 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-500 transition"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="h-4 w-4"
+                  >
+                    <path
+                      d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                    />
+                  </svg>
+                  Twitter
+                </a>
+                <a
+                  href="#"
+                  class="inline-flex items-center gap-2 rounded-lg bg-green-600 px-4 py-2 text-sm font-semibold text-white hover:bg-green-700 transition"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="h-4 w-4"
+                  >
+                    <path d="M12 2a10 10 0 100 20 10 10 0 000-20z" />
+                  </svg>
+                  Zalo
+                </a>
+                <button
+                  onclick="copyToClipboard()"
+                  class="inline-flex items-center gap-2 rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:border-primary-300 hover:text-primary-700 transition"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-4 w-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 7.5V6.108c0-1.135.845-2.098 1.976-2.192.373-.03.748-.057 1.123-.08M15.75 18H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08M15.75 18.75v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5A3.375 3.375 0 006.375 7.5H5.25m0 12.75h1.5c.621 0 1.125-.504 1.125-1.125v-9.75M5.25 19.5h1.5m0 0h1.5m-1.5 0v-1.125c0-.621.504-1.125 1.125-1.125h1.5m0 0h1.5m-1.5 0V9.75m0 0h1.5m-1.5 0v-1.125c0-.621.504-1.125 1.125-1.125H6.375c.621 0 1.125.504 1.125 1.125v1.5M5.25 7.5h1.5"
+                    />
+                  </svg>
+                  Copy link
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="lg:col-span-1 space-y-8">
+          <!-- Related Articles -->
+          <div
+            class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm"
+          >
+            <h3 class="text-lg font-semibold text-slate-900 mb-4">
+              Bài viết liên quan
+            </h3>
+            <div class="space-y-4">
+              <article class="flex gap-4">
+                <img
+                  src="https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=120&auto=format&fit=crop"
+                  alt="Học bổng"
+                  class="w-20 h-16 object-cover rounded-lg flex-shrink-0"
+                />
+                <div>
+                  <h4
+                    class="font-semibold text-slate-900 text-sm line-clamp-2 mb-1"
+                  >
+                    Học bổng kỳ Thu – các trường top Seoul
+                  </h4>
+                  <p class="text-xs text-slate-500">12 tháng 1, 2025</p>
+                </div>
+              </article>
+              <article class="flex gap-4">
+                <img
+                  src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=120&auto=format&fit=crop"
+                  alt="Tuyển sinh"
+                  class="w-20 h-16 object-cover rounded-lg flex-shrink-0"
+                />
+                <div>
+                  <h4
+                    class="font-semibold text-slate-900 text-sm line-clamp-2 mb-1"
+                  >
+                    Cập nhật tuyển sinh Đại học Hàn Quốc
+                  </h4>
+                  <p class="text-xs text-slate-500">10 tháng 1, 2025</p>
+                </div>
+              </article>
+              <article class="flex gap-4">
+                <img
+                  src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=120&auto=format&fit=crop"
+                  alt="Kinh nghiệm"
+                  class="w-20 h-16 object-cover rounded-lg flex-shrink-0"
+                />
+                <div>
+                  <h4
+                    class="font-semibold text-slate-900 text-sm line-clamp-2 mb-1"
+                  >
+                    Kinh nghiệm sống và học tập tại Seoul
+                  </h4>
+                  <p class="text-xs text-slate-500">8 tháng 1, 2025</p>
+                </div>
+              </article>
+            </div>
+            <a
+              href="./index.html#blog"
+              class="inline-flex items-center gap-2 mt-4 text-sm font-semibold text-primary-600 hover:text-primary-700"
+            >
+              Xem tất cả bài viết
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Contact CTA -->
+          <div
+            class="bg-gradient-to-br from-primary-50 to-blue-50 rounded-2xl border border-primary-200 p-6"
+          >
+            <h3 class="text-lg font-semibold text-slate-900 mb-3">
+              Cần tư vấn thêm?
+            </h3>
+            <p class="text-sm text-slate-700 mb-4">
+              Đội ngũ chuyên gia của chúng tôi sẵn sàng hỗ trợ bạn 24/7.
+            </p>
+            <a
+              href="./index.html#contact"
+              class="inline-flex items-center justify-center w-full rounded-lg bg-primary-600 px-4 py-3 text-sm font-semibold text-white hover:bg-primary-700 transition"
+            >
+              Đăng ký tư vấn miễn phí
+            </a>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <!-- ------------End MAIN CONTENT  -->
+
+    <!-- ------------Start FOOTER  -->
+    <footer class="border-t border-slate-200 py-8 mt-16">
+      <div
+        class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-600"
+      >
+        <div>© 2025 Du học Hàn Quốc. All rights reserved.</div>
+        <div class="flex items-center gap-4">
+          <a href="./index.html#about" class="hover:text-primary-700"
+            >Giới thiệu</a
+          >
+          <a href="./index.html#programs" class="hover:text-primary-700"
+            >Chương trình</a
+          >
+          <a href="./index.html#contact" class="hover:text-primary-700"
+            >Liên hệ</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+        });
+      }
+
+      // Copy to clipboard function
+      function copyToClipboard() {
+        navigator.clipboard.writeText(window.location.href).then(() => {
+          // Show success message
+          const button = event.target.closest("button");
+          const originalText = button.innerHTML;
+          button.innerHTML = `
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4">
+              <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14l-4-4 1.4-1.4L13 12.2l4.6-4.6L19 9l-6 7z"/>
+            </svg>
+            Đã copy!
+          `;
+          setTimeout(() => {
+            button.innerHTML = originalText;
+          }, 2000);
+        });
+      }
+    </script>
+  </body>
 </html>
